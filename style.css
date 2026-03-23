@@ -118,6 +118,7 @@ aside{
     height:30px;
     align-items:center;
     justify-content:center;
+    cursor:pointer;
 }
 .post-text{
     color:black;
@@ -133,6 +134,7 @@ aside{
     height:40px;
     align-items:center;
     justify-content:space-between;
+    cursor:pointer;
 }
 
 .profile-sub{
@@ -202,21 +204,115 @@ main-nav{
     height:50px;
     width:50%;
 }
+.main-nav-item .p{
+    padding:12px 0;
+    border-bottom:solid 3px #1d9bf0;
+    border-radius:1px
+}
 .main-nav-item:hover{
     background-color:rgba(32, 32, 32, 0.527);
 }
 
 section{
     display:flex;
+    flex-direction:column;
     justify-content:center;
-
 }
 
-.twitter-tweet{
-    color:black;
+.post-prompt{
+    display:flex;
+    flex-direction:column;
+    border:solid 1px #323639;
+    height:auto;
+    padding:10px;
 }
 
+.post-prompt-text{
+    font-size:20px;
+    font-weight: 400;
+    color:#71767b;
+}
 
+.post-prompt div{
+    gap:15px;
+    display:flex;
+    align-items:center;
+}
+
+.post-prompt-icons-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 10px 10px 0 10px;
+}
+
+.post-prompt-icons{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    margin-left: 50px;
+}
+.post-prompt-text-icon{
+    width:17px;
+    fill: rgb(29, 155, 240);
+}
+
+.post-prompt-text-nb{
+    margin-left: 50px;
+    width:90%;
+    padding: 20px 0;
+    color:rgb(29, 155, 240);
+    font-size:15px;
+    font-weight:600;
+    border-bottom:solid 1px #323639;
+    cursor:pointer;
+}
+
+.post-prompt-text-nb span{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.post-prompt-text-nb span:hover{
+    background-color:#038be623;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    border-top-right-radius:20px;
+
+}
+.post-prompt-icon{
+    width:21px;
+    fill: rgb(29, 155, 240);
+    cursor:pointer;
+    padding:5px;
+}
+
+.post-prompt-icon:hover{
+    background-color:#038be623;
+    border-radius:100%;
+}
+.post2{
+    background-color:white;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    display:flex;
+    padding:10px 5px 10px 5px;
+    width:60px;
+    height:15px;
+    align-items:center;
+    justify-content:center;
+}
+
+.tweet{
+    display:flex;
+    flex-direction:row;
+    padding:10px;
+    gap:10px;
+}
 /*Main-aside*/
 
 main-aside{

@@ -1,0 +1,225 @@
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:row;
+    color:white;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
+}
+
+/*Aside*/
+
+aside{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:23vw;
+    height:100vh;
+    background-color:black;
+    position:fixed;
+    border-right:1px solid #323639;
+}
+.upper-sec{
+    display:flex;
+    flex-direction:column;
+    width:23vw;
+    background-color:black;
+    border-right:1px solid #323639;
+    align-items:flex-end;
+}
+
+.lower-sec{
+    display:flex;
+    flex-direction:column;
+    width:23vw;
+    background-color:black;
+    align-items:flex-end;
+}
+
+.Logo{
+    fill:white;
+    width: 30px;
+    padding:5px;
+    cursor:pointer;
+}
+
+.Logo:hover{
+    background-color:#323639;
+    border-radius: 100%;
+    padding:5px;
+}
+
+.aside-item{
+    display:flex;
+    padding:10px 5px 10px 5px;
+    width:80%;
+    height:30px;
+    align-items:center;
+    gap:20px;
+}
+
+.aside-item-content{
+    display:flex;
+    padding:0 10px 0 3px;
+    width:fit-content;
+    align-items:center;
+    gap:20px;
+}
+.aside-Logo{
+    display:flex;
+    padding:10px 5px 10px 5px;
+    width:80%;
+    align-items:center;
+    gap:20px;
+}
+
+.aside-item-content:hover{
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    background-color:#323639;
+    cursor:pointer;
+}
+
+.Home{
+    font-weight:700;
+    font-size:20px;
+}
+.item-text{
+    font-size: 20px;
+    font-weight:400;
+}
+.icon{
+    fill:white;
+    width: 30px;
+    padding:5px;
+    cursor:pointer;
+}
+.promotion-tag{
+    background-color:#1d9bf0;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 2px 4px;
+    font-weight:500;
+}
+
+.post{
+    background-color:white;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    display:flex;
+    padding:10px 5px 10px 5px;
+    width:65%;
+    margin-right:15%;
+    height:30px;
+    align-items:center;
+    justify-content:center;
+}
+.post-text{
+    color:black;
+    font-size:18px;
+    font-weight:650;
+}
+
+.profile{
+    display:flex;
+    padding:10px 5px 10px 5px;
+    width:80%;
+    margin:0 3px 15px 0;
+    height:40px;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.profile-sub{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+
+.profile:hover{
+    background-color:#323639;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+}
+.profile-icon{
+    fill:white;
+    width: 20px;
+    padding:3px;
+}
+.profile-text{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+    margin:0;
+    padding:0;
+}
+.profile_pic{
+    width:40px;
+    border-radius:100%;
+}
+
+.username{
+    font-weight:600;
+}
+.handle{
+    color:#71767b;
+}
+/*Main*/
+
+main{
+    margin-left:23vw;
+    width:50vw;
+    background-color:black;
+    border-right: 1px solid #323639;
+    display:flex;
+    flex-direction:column;
+}
+
+main-nav{
+    position:sticky;
+    top:0;
+    display:flex;
+    flex-direction:row;
+    border-bottom:solid 1px #323639;
+    height:50px;
+    background-color:#00000000;
+
+}
+.main-nav-item{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    height:50px;
+    width:50%;
+}
+.main-nav-item:hover{
+    background-color:rgba(32, 32, 32, 0.527);
+}
+
+section{
+    display:flex;
+    justify-content:center;
+
+}
+
+.twitter-tweet{
+    color:black;
+}
+
+
+/*Main-aside*/
+
+main-aside{
+    width:27vw;
+    background-color:black;
+}

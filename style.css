@@ -5,7 +5,7 @@ body{
     flex-direction:row;
     color:white;
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    
+    background-color:black;
 }
 
 /*Aside*/
@@ -225,13 +225,21 @@ main-nav{
 section{
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    align-items:center;
+    overflow-y:scroll;
+    height:1620px;
+    display:sticky;
+    top:0;
+    
+}
+section::-webkit-scrollbar {
+    display: none;
 }
 
 .post-prompt{
     display:flex;
     flex-direction:column;
-    border:solid 1px #323639;
+    width:95%;
     height:auto;
     padding:10px;
 }
@@ -303,7 +311,7 @@ section{
     border-radius:100%;
 }
 .post2{
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.5);
     border-top-left-radius:30px;
     border-top-right-radius:30px;
     border-bottom-left-radius:30px;
@@ -325,6 +333,7 @@ section{
     padding-bottom:0;
     gap:0px;
     border:solid 1px #323639;
+    border-bottom:none;
 }
 .tweet-verification-icon{
     fill:rgb(29, 155, 240);
@@ -334,6 +343,7 @@ section{
 .tweet-header-text{
     display:flex;
     flex-direction:row;
+    align-items:center;
 }
 
 .tweet-icons{
@@ -361,6 +371,7 @@ section{
     }
 
 .tweet-content img{
+    padding:10px;
     width:80%;
     border-radius:20px;
 }
@@ -450,22 +461,44 @@ main-aside{
     background-color:black;
     height:fit-content;
     border:solid 1px #323639;
+    border-bottom:none;
 }
 
 main-aside-nav{
-    
     position:sticky;
     top:0;
     right:0;
     display:flex;
     flex-direction:row;
     justify-content:center;
+    align-items:center;
     height:50px;
     background-color:#000000d2;
 
 }
+.search-icon{
+    width:20px;
+    fill:#71767b;
+    border:solid 1px #323639;
+    border-right:none;
+    height:38px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    padding-left:10px;
+}
 
+.searchbar{
+    padding:5px;
+    background-color:black;
+    height:40px;
+    width:70%;
+    border:1px solid #323639;
+    border-left:none;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;   
+}
 .main-aside-section{
+    padding:10px;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -475,8 +508,124 @@ main-aside-nav{
 }
 
 .container{
+    display:flex;
+    flex-direction:column;
     width:90%;
-    height:240px;
+    height:fit-content;
     border:solid 1px #323639;
     border-radius:20px;
+    padding:10px;
+    gap:20px;
+}
+
+.container-header{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
+
+.promotion-tag2{
+    background-color:rgb(0, 186, 124);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 2px 2px;
+    height:fit-content;
+    font-weight:500;
+}
+
+h3{
+    margin:0;
+    padding-bottom: 10px;
+}
+
+p{
+    margin:3px;
+}
+
+.subscribe{
+    background-color:#1d9bf0;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    display:flex;
+    padding:10px;
+    width:fit-content;
+    height:15px;
+    align-items:center;
+    justify-content:center;
+}
+
+.subscribe-text{
+    color:white;
+    font-size:18px;
+    font-weight:650;
+}
+
+.container2{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:3px;
+}
+
+.profile_pic2{
+    width:15px;
+    border-radius:100%;
+}
+
+.handle2{
+    color:#71767b;
+    font-size:13px;
+}
+.container4{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    cursor:pointer;
+}
+.container4:hover{
+    background-color:#121213;
+}
+
+.show-more{
+    color:#1d9bf0;
+}
+
+.follow{
+    background-color:white;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    display:flex;
+    padding:10px 5px 10px 5px;
+    width:55px;
+    height:15px;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+}
+.follow-text{
+    color:black;
+    font-size:13px;
+    font-weight:650;
+}
+
+.container5{
+    display:flex;
+    flex-direction:row;
+    gap:3px;
+}
+
+footer{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding:10px;
+    margin-bottom:50px;
+}
+.footer-text{
+    width:80%;
 }

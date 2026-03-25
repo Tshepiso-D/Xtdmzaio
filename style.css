@@ -251,6 +251,9 @@ section::-webkit-scrollbar {
     font-size:20px;
     font-weight: 400;
     color:#71767b;
+    background-color:black;
+    border:none;
+    width:80%;
 }
 
 .post-prompt div{

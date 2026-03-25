@@ -2,12 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta type="viewport" width="viewport-width" initial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter.3.ico">
         <title>Home/X</title>
     </head>
     <body>
+        <input class="theme" type="checkbox" style="width:20px; height:20px" id="darkToggle">
+        <label class="theme_label">🌙☀︎Theme___</label>
         <aside>
             <div class="upper-sec">
                 <div class="aside-Logo">
@@ -16,6 +18,7 @@
                 
                 <div class="aside-item">
                     <div class="aside-item-content">
+                        
                         <span>
                             <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><g><path d="M21.591 7.146L12.52 1.157c-.316-.21-.724-.21-1.04 0l-9.071 5.99c-.26.173-.409.456-.409.757v13.183c0 .502.418.913.929.913H9.14c.51 0 .929-.41.929-.913v-7.075h3.909v7.075c0 .502.417.913.928.913h6.165c.511 0 .929-.41.929-.913V7.904c0-.301-.158-.584-.408-.758z"></path></g></svg>
                         </span> 
@@ -169,10 +172,10 @@
                                 <svg viewBox="0 0 24 24" aria-hidden="true" class="post-prompt-icon"><g><path d="M6 3V2h2v1h6V2h2v1h1.5C18.88 3 20 4.119 20 5.5v2h-2v-2c0-.276-.22-.5-.5-.5H16v1h-2V5H8v1H6V5H4.5c-.28 0-.5.224-.5.5v12c0 .276.22.5.5.5h3v2h-3C3.12 20 2 18.881 2 17.5v-12C2 4.119 3.12 3 4.5 3H6zm9.5 8c-2.49 0-4.5 2.015-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.01-4.5-4.5-4.5zM9 15.5C9 11.91 11.91 9 15.5 9s6.5 2.91 6.5 6.5-2.91 6.5-6.5 6.5S9 19.09 9 15.5zm5.5-2.5h2v2.086l1.71 1.707-1.42 1.414-2.29-2.293V13z"></path></g></svg>
                             </span>
                             <span>
-                                <svg viewBox="0 0 24 24" aria-hidden="true" class="post-prompt-icon"><g><path d="M12 7c-1.93 0-3.5 1.57-3.5 3.5S10.07 14 12 14s3.5-1.57 3.5-3.5S13.93 7 12 7zm0 5c-.827 0-1.5-.673-1.5-1.5S11.173 9 12 9s1.5.673 1.5 1.5S12.827 12 12 12zm0-10c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 17.77c-1.665-1.241-6.5-5.196-6.5-9.27C5.5 6.916 8.416 4 12 4s6.5 2.916 6.5 6.5c0 4.073-4.835 8.028-6.5 9.27z"></path></g></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="post-prompt-icon out"><g><path d="M12 7c-1.93 0-3.5 1.57-3.5 3.5S10.07 14 12 14s3.5-1.57 3.5-3.5S13.93 7 12 7zm0 5c-.827 0-1.5-.673-1.5-1.5S11.173 9 12 9s1.5.673 1.5 1.5S12.827 12 12 12zm0-10c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 17.77c-1.665-1.241-6.5-5.196-6.5-9.27C5.5 6.916 8.416 4 12 4s6.5 2.916 6.5 6.5c0 4.073-4.835 8.028-6.5 9.27z"></path></g></svg>
                             </span>
                             <span>
-                                <svg viewBox="0 0 24 24" aria-hidden="true" class="post-prompt-icon"><g><path d="M3 2h18.61l-3.5 7 3.5 7H5v6H3V2zm2 12h13.38l-2.5-5 2.5-5H5v10z"></path></g></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="post-prompt-icon out"><g><path d="M3 2h18.61l-3.5 7 3.5 7H5v6H3V2zm2 12h13.38l-2.5-5 2.5-5H5v10z"></path></g></svg>
                             </span>
                         </div>
                         <div class="post2">
@@ -712,7 +715,7 @@
                 </div>
                 <div class="container">
                     <h3>Today's News</h3>
-                    <div>
+                    <div class="news-sec">
                         <span class="username">
                             Daytime Nappers May Have Larger Brains, Study Finds
                         </span>
@@ -720,7 +723,7 @@
                             20 hours ago · News · 1,192 posts
                         </span>
                     </div>
-                    <div>
+                    <div class="news-sec">
                         <span class="username">
                             US and Israeli Strikes Hit Iranian Gas Sites Amid Trump's Pause
                         </span>
@@ -728,7 +731,7 @@
                             4 hours ago · News · 5,315 posts
                         </span>
                     </div>
-                    <div>
+                    <div class="news-sec">
                         <span class="username">
                             Reports claim Iran's new supreme leader Mojtaba Khamenei agreed to negotiate with the United States
                         </span>

@@ -166,6 +166,11 @@ aside{
     border-radius:100%;
 }
 
+.profile_pic_nav{
+    width:30px;
+    border-radius:100%;
+}
+
 .username{
     font-weight:600;
     display:flex;
@@ -671,6 +676,57 @@ footer{
     display:none;
 }
 
+/* Mobile navigation drawer (collapsible aside) */
+.nav-toggle{
+    position:fixed;
+    opacity:0;
+    pointer-events:none;
+    width:1px;
+    height:1px;
+}
+
+.nav-toggle-button{
+    display:none;
+    position:fixed;
+    top:12px;
+    left:12px;
+    z-index:1100;
+    width:42px;
+    height:42px;
+    border-radius:999px;
+    border:1px solid #323639;
+    background-color:#0b0b0b;
+    color:white;
+    cursor:pointer;
+    align-items:center;
+    justify-content:center;
+}
+
+.nav-toggle-button svg{
+    width:22px;
+    height:22px;
+    fill:currentColor;
+}
+
+.nav-overlay{
+    position:fixed;
+    inset:0;
+    z-index:900;
+    background-color:rgba(0, 0, 0, 0.6);
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 160ms ease;
+}
+
+#navToggle:checked ~ aside{
+    transform:translateX(0);
+}
+
+#navToggle:checked ~ .nav-overlay{
+    opacity:1;
+    pointer-events:auto;
+}
+
 #darktoggle:checked~.theme_label{
     color:white;
     background-color:black;
@@ -785,12 +841,12 @@ footer{
     background-color:#eff3f4;
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:1000px){
     main-aside{
         display:none;
     }
     aside{
-        display:none;
+        display:flex;
     }
     main{
         width:100%;
@@ -823,4 +879,38 @@ footer{
         width:10%;
     }
     
+}
+
+@media screen and (max-width:1000px){
+    /* Show hamburger button */
+    .nav-toggle-button{
+        display:flex;
+    }
+
+    /* Main content should use full width when drawer is closed */
+    main{
+        width:100%;
+        margin-left:0;
+    }
+
+    /* Optional: hide the right rail on smaller screens */
+    main-aside{
+        display:none;
+    }
+
+    aside{
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:1000;
+        width:min(320px, 85vw);
+        transform:translateX(-100%);
+        transition:transform 200ms ease;
+        overflow-y:auto;
+    }
+
+    /* Keep drawer open when toggle is checked */
+    #navToggle:checked ~ aside{
+        transform:translateX(0);
+    }
 }

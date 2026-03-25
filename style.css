@@ -775,6 +775,9 @@ footer{
     border-right:solid 1px #eff3f4;
     border-left:solid 1px #eff3f4;
 }
+#darktoggle:checked~main section .post-prompt div .post-prompt-text{
+    background-color:white;
+}
 #darktoggle:checked~main-aside{
     background-color:white;
     color:black;

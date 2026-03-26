@@ -810,6 +810,10 @@ footer{
     background-color:rgb(116, 114, 114);
 }
 
+#darktoggle:checked~main section .post-prompt {
+    border-bottom:solid 1px #eff3f4;
+}
+
 #darktoggle:checked~main main-nav .main-nav-item .p{
     color:black
 }

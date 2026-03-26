@@ -162,8 +162,9 @@ aside{
     padding:0;
 }
 .profile_pic{
-    width:40px;
+    width:30px;
     border-radius:100%;
+    margin-left:10px;
 }
 
 .profile_pic_nav{
@@ -192,6 +193,7 @@ main{
     border-left:solid 1px #323639;
     display:flex;
     flex-direction:column;
+    justify-content:center;
 }
 
 main-nav{
@@ -202,6 +204,7 @@ main-nav{
     border-bottom:solid 1px #323639;
     height:50px;
     background-color:#000000d2;
+    width:100%
 
 }
 .main-nav-item{
@@ -231,20 +234,23 @@ section{
     align-items:center;
     overflow-y:scroll;
     height:1660px;
-    display:sticky;
-    top:0;
-    
+    width:100%;
 }
 section::-webkit-scrollbar {
     display: none;
 }
-
+#section{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
 .post-prompt{
     display:flex;
     flex-direction:column;
-    width:95%;
+    width:100%;
     height:auto;
     padding:10px;
+    border-bottom: solid 1px #323639;
 }
 
 .post-prompt-text{
@@ -328,17 +334,24 @@ section::-webkit-scrollbar {
     height:15px;
     align-items:center;
     justify-content:center;
+    cursor:default;
+}
+
+.post4{
+    cursor:pointer;
+    background-color:white;
 }
 
 .tweet{
-    width:95%;
+    width:100%;
     height:fit-content;
     display:flex;
     flex-direction:row;
-    padding:2.5%;
+    padding:10px;
     padding-bottom:0;
     gap:0px;
-    border:solid 1px #323639;
+    border-top:solid 1px #323639;
+    border-bottom:solid 1px #323639;
     border-bottom:none;
     cursor:pointer;
 }
@@ -869,7 +882,8 @@ footer{
         width:100%;
     }
     .profile_pic{
-        width:30px;
+        width:25px;
+        margin-top:5px;
     }
     .post-prompt-icons{
         gap:0;

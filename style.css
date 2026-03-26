@@ -460,6 +460,16 @@ section::-webkit-scrollbar {
     border-radius:100%
     }
 }
+.liked{
+    fill:rgb(249 24 128);
+    color: rgb(249 24 128);
+}
+
+.retweeted{
+    fill:rgb(0,186,124);
+    color: rgb(0,186,124);
+}
+
 .footer-icons-retweet:hover{
     color:rgb(0, 186, 124);
     .retweet{

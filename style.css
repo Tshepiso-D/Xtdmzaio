@@ -978,5 +978,10 @@ footer{
     /* Keep drawer open when toggle is checked */
     #navToggle:checked ~ aside{
         transform:translateX(0);
+
+    }
+
+    #navToggle:checked~.nav-toggle-button{
+        left:50px;
     }
 }

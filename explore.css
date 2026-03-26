@@ -833,16 +833,16 @@ footer{
     background-color:#eff3f4;
 }
 
-#darktoggle:checked~main-aside main-aside-nav{
+#darktoggle:checked~main main-aside-nav{
     background-color:white;
 }
 
-#darktoggle:checked~main-aside main-aside-nav .searchbar{
+#darktoggle:checked~main main-aside-nav .searchbar{
     background-color:white;
     border-color:#eff3f4;
 }
 
-#darktoggle:checked~main-aside main-aside-nav .search-icon{
+#darktoggle:checked~main main-aside-nav .search-icon{
     background-color:white;
     border-color:#eff3f4;
 }

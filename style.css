@@ -1,3 +1,7 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body{
     margin:0;
     padding:0;
@@ -262,6 +266,7 @@ section::-webkit-scrollbar {
     background-color:black;
     border:none;
     width:80%;
+    outline:none;
 }
 
 .post-prompt div{

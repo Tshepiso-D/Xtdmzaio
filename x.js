@@ -3,7 +3,7 @@ var retweetCount1 = document.querySelector(".retweets1")
 retweetbutton1=document.querySelector(".retweet1");
 
 retweetbutton1.addEventListener("click", function(){
-    var retweetsvg=document.querySelector(".retweet");
+    var retweetsvg=document.querySelector(".retweetsvg1");
     retweetsvg.classList.add("retweeted");
     retweetCount1.classList.add("retweeted");
     var retweets1=Number(retweetCount1.innerHTML);
@@ -16,7 +16,7 @@ var likeCount1 = document.querySelector(".likes1")
 likebutton1=document.querySelector(".like1");
 
 likebutton1.addEventListener("click", function(){
-    var likesvg=document.querySelector(".like");
+    var likesvg=document.querySelector(".likesvg1");
     likesvg.innerHTML=`<g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g>`;
     likesvg.classList.add("liked");
     likeCount1.classList.add("liked");
@@ -32,6 +32,9 @@ var retweetCount2 = document.querySelector(".retweets2")
 retweetbutton2=document.querySelector(".retweet2");
 
 retweetbutton2.addEventListener("click", function(){
+    var retweetsvg=document.querySelector(".retweetsvg2");
+    retweetsvg.classList.add("retweeted");
+    retweetCount2.classList.add("retweeted");
     var retweets2=Number(retweetCount2.innerHTML);
     retweets2+=1;
     retweetCount2.innerHTML=retweets2;
@@ -42,6 +45,10 @@ var likeCount2 = document.querySelector(".likes2")
 likebutton2=document.querySelector(".like2");
 
 likebutton2.addEventListener("click", function(){
+    var likesvg=document.querySelector(".likesvg2");
+    likesvg.innerHTML=`<g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g>`;
+    likesvg.classList.add("liked");
+    likeCount2.classList.add("liked");
     var likes2=Number(likeCount2.innerHTML);
     likes2+=1;
     likeCount2.innerHTML=likes2;
@@ -54,6 +61,9 @@ var retweetCount3 = document.querySelector(".retweets3")
 retweetbutton3=document.querySelector(".retweet3");
 
 retweetbutton3.addEventListener("click", function(){
+    var retweetsvg=document.querySelector(".retweetsvg3");
+    retweetsvg.classList.add("retweeted");
+    retweetCount3.classList.add("retweeted");
     var retweets3=Number(retweetCount3.innerHTML);
     retweets3+=1;
     retweetCount3.innerHTML=retweets3;
@@ -64,6 +74,10 @@ var likeCount3 = document.querySelector(".likes3")
 likebutton3=document.querySelector(".like3");
 
 likebutton3.addEventListener("click", function(){
+    var likesvg=document.querySelector(".likesvg3");
+    likesvg.innerHTML=`<g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g>`;
+    likesvg.classList.add("liked");
+    likeCount3.classList.add("liked");
     var likes3=Number(likeCount3.innerHTML);
     likes3+=1;
     likeCount3.innerHTML=likes3;
@@ -76,6 +90,9 @@ var retweetCount4 = document.querySelector(".retweets4")
 retweetbutton4=document.querySelector(".retweet4");
 
 retweetbutton4.addEventListener("click", function(){
+    var retweetsvg=document.querySelector(".retweetsvg4");
+    retweetsvg.classList.add("retweeted");
+    retweetCount4.classList.add("retweeted");
     var retweets4=Number(retweetCount4.innerHTML);
     retweets4+=1;
     retweetCount4.innerHTML=retweets4;
@@ -86,6 +103,10 @@ var likeCount4 = document.querySelector(".likes4")
 likebutton4=document.querySelector(".like4");
 
 likebutton4.addEventListener("click", function(){
+    var likesvg=document.querySelector(".likesvg4");
+    likesvg.innerHTML=`<g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g>`;
+    likesvg.classList.add("liked");
+    likeCount4.classList.add("liked");
     var likes4=Number(likeCount4.innerHTML);
     likes4+=1;
     likeCount4.innerHTML=likes4;
@@ -98,6 +119,9 @@ var retweetCount5 = document.querySelector(".retweets5")
 retweetbutton5=document.querySelector(".retweet5");
 
 retweetbutton5.addEventListener("click", function(){
+    var retweetsvg=document.querySelector(".retweetsvg5");
+    retweetsvg.classList.add("retweeted");
+    retweetCount5.classList.add("retweeted");
     var retweets5=Number(retweetCount5.innerHTML);
     retweets5+=1;
     retweetCount5.innerHTML=retweets5;
@@ -108,6 +132,10 @@ var likeCount5 = document.querySelector(".likes5")
 likebutton5=document.querySelector(".like5");
 
 likebutton5.addEventListener("click", function(){
+    var likesvg=document.querySelector(".likesvg5");
+    likesvg.innerHTML=`<g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g>`;
+    likesvg.classList.add("liked");
+    likeCount5.classList.add("liked");
     var likes5=Number(likeCount5.innerHTML);
     likes5+=1;
     likeCount5.innerHTML=likes5;
@@ -120,6 +148,9 @@ var retweetCount6 = document.querySelector(".retweets6")
 retweetbutton6=document.querySelector(".retweet6");
 
 retweetbutton6.addEventListener("click", function(){
+    var retweetsvg=document.querySelector(".retweetsvg6");
+    retweetsvg.classList.add("retweeted");
+    retweetCount6.classList.add("retweeted");
     var retweets6=Number(retweetCount6.innerHTML);
     retweets6+=1;
     retweetCount6.innerHTML=retweets6;
@@ -130,6 +161,10 @@ var likeCount6 = document.querySelector(".likes6")
 likebutton6=document.querySelector(".like6");
 
 likebutton6.addEventListener("click", function(){
+    var likesvg=document.querySelector(".likesvg6");
+    likesvg.innerHTML=`<g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g>`;
+    likesvg.classList.add("liked");
+    likeCount6.classList.add("liked");
     var likes6=Number(likeCount6.innerHTML);
     likes6+=1;
     likeCount6.innerHTML=likes6;
@@ -142,6 +177,9 @@ var retweetCount7 = document.querySelector(".retweets7")
 retweetbutton7=document.querySelector(".retweet7");
 
 retweetbutton7.addEventListener("click", function(){
+    var retweetsvg=document.querySelector(".retweetsvg7");
+    retweetsvg.classList.add("retweeted");
+    retweetCount7.classList.add("retweeted");
     var retweets7=Number(retweetCount7.innerHTML);
     retweets7+=1;
     retweetCount7.innerHTML=retweets7;
@@ -152,6 +190,10 @@ var likeCount7 = document.querySelector(".likes7")
 likebutton7=document.querySelector(".like7");
 
 likebutton7.addEventListener("click", function(){
+    var likesvg=document.querySelector(".likesvg7");
+    likesvg.innerHTML=`<g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g>`;
+    likesvg.classList.add("liked");
+    likeCount7.classList.add("liked");
     var likes7=Number(likeCount7.innerHTML);
     likes7+=1;
     likeCount7.innerHTML=likes7;
@@ -164,6 +206,9 @@ var retweetCount8 = document.querySelector(".retweets8")
 retweetbutton8=document.querySelector(".retweet8");
 
 retweetbutton8.addEventListener("click", function(){
+    var retweetsvg=document.querySelector(".retweetsvg8");
+    retweetsvg.classList.add("retweeted");
+    retweetCount8.classList.add("retweeted");
     var retweets8=Number(retweetCount8.innerHTML);
     retweets8+=1;
     retweetCount8.innerHTML=retweets8;
@@ -174,6 +219,10 @@ var likeCount8 = document.querySelector(".likes8")
 likebutton8=document.querySelector(".like8");
 
 likebutton8.addEventListener("click", function(){
+    var likesvg=document.querySelector(".likesvg8");
+    likesvg.innerHTML=`<g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g>`;
+    likesvg.classList.add("liked");
+    likeCount8.classList.add("liked");
     var likes8=Number(likeCount8.innerHTML);
     likes8+=1;
     likeCount8.innerHTML=likes8;
@@ -186,6 +235,9 @@ var retweetCount9 = document.querySelector(".retweets9")
 retweetbutton9=document.querySelector(".retweet9");
 
 retweetbutton9.addEventListener("click", function(){
+    var retweetsvg=document.querySelector(".retweetsvg9");
+    retweetsvg.classList.add("retweeted");
+    retweetCount9.classList.add("retweeted");
     var retweets9=Number(retweetCount9.innerHTML);
     retweets9+=1;
     retweetCount9.innerHTML=retweets9;
@@ -196,6 +248,10 @@ var likeCount9 = document.querySelector(".likes9")
 likebutton9=document.querySelector(".like9");
 
 likebutton9.addEventListener("click", function(){
+    var likesvg=document.querySelector(".likesvg9");
+    likesvg.innerHTML=`<g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g>`;
+    likesvg.classList.add("liked");
+    likeCount9.classList.add("liked");
     var likes9=Number(likeCount9.innerHTML);
     likes9+=1;
     likeCount9.innerHTML=likes9;
@@ -257,11 +313,11 @@ postButton.addEventListener("click", function(){
                                 0
                             </span>
                             <span class="footer-icons-retweet retweet10">
-                                <svg viewBox="0 0 24 24" aria-hidden="true" class="tweet-icons retweet"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="tweet-icons retweet retweetsvg10"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg>
                                 <span class="retweets10">0</span>
                             </span>
                             <span class="footer-icons-like like10">
-                                <svg viewBox="0 0 24 24" aria-hidden="true" class="tweet-icons like"><g><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="tweet-icons like likesvg10"><g><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg>
                                 <span class="likes10">0</span>
                             </span>
                             <span class="footer-icons">
@@ -280,6 +336,9 @@ postButton.addEventListener("click", function(){
             retweetbutton10=document.querySelector(`.retweet10`);
 
             retweetbutton10.addEventListener("click", function(){
+                var retweetsvg=document.querySelector(".retweetsvg10");
+                retweetsvg.classList.add("retweeted");
+                retweetCount10.classList.add("retweeted");
                 var retweets10=Number(retweetCount10.innerHTML);
                 retweets10+=1;
                 retweetCount10.innerHTML=retweets10;
@@ -290,6 +349,10 @@ postButton.addEventListener("click", function(){
             likebutton10=document.querySelector(`.like10`);
 
             likebutton10.addEventListener("click", function(){
+                var likesvg=document.querySelector(".likesvg10");
+                likesvg.innerHTML=`<g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g>`;
+                likesvg.classList.add("liked");
+                likeCount10.classList.add("liked");
                 var likes10=Number(likeCount10.innerHTML);
                 likes10+=1;
                 likeCount10.innerHTML=likes10;

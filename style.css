@@ -497,7 +497,8 @@ main-aside{
     width:27vw;
     background-color:black;
     height:fit-content;
-    border:solid 1px #323639;
+    border-right:solid 1px #323639;
+    border-left:solid 1px #323639;
     border-bottom:none;
 }
 
@@ -879,7 +880,6 @@ footer{
 #darktoggle:checked~main-aside .main-aside-section .container .show-more:hover{
     background-color:#eff3f4;
 }
-
 
 .mobile-bottom-nav{
     display:none;
